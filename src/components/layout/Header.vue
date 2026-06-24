@@ -23,12 +23,7 @@
                         (555) 412-1234
                     </a>
 
-                    <button
-                        @click="lang = lang === 'pt' ? 'en' : 'pt'"
-                        class="text-xs font-bold uppercase tracking-wider text-body hover:text-brand-primary transition-all duration-300 w-8 h-8 rounded-full border border-gray-200 hover:border-brand-primary flex items-center justify-center"
-                    >
-                        {{ lang }}
-                    </button>
+                    <button @click="toggleLang">{{ locale.toUpperCase() }}</button>
 
                     <button
                         @click="toggleDarkMode"
@@ -74,18 +69,22 @@
                         class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm"
                     >
                         <li>
-                            <a href="#" class="text-heading hover:underline" aria-current="page"
-                                >Home</a
-                            >
+                            <a href="#" class="text-heading hover:underline" aria-current="page">{{
+                                t('nav.home')
+                            }}</a>
                         </li>
                         <li>
-                            <a href="#" class="text-heading hover:underline">Company</a>
+                            <a href="#" class="text-heading hover:underline">{{
+                                t('nav.company')
+                            }}</a>
                         </li>
                         <li>
-                            <a href="#" class="text-heading hover:underline">Team</a>
+                            <a href="#" class="text-heading hover:underline">{{ t('nav.team') }}</a>
                         </li>
                         <li>
-                            <a href="#" class="text-heading hover:underline">Features</a>
+                            <a href="#" class="text-heading hover:underline">{{
+                                t('nav.features')
+                            }}</a>
                         </li>
                     </ul>
                 </div>
@@ -97,16 +96,13 @@
 <script setup>
 import { ref } from 'vue';
 
-const lang = ref('pt');
-const isDark = ref(false);
+import { useI18n } from 'vue-i18n';
+import { useTheme } from '../../composables/useTheme';
 
-const toggleDarkMode = () => {
-    isDark.value = !isDark.value;
-    // Lógica para alternar a classe dark no elemento raiz
-    if (isDark.value) {
-        document.documentElement.classList.add('dark');
-    } else {
-        document.documentElement.classList.remove('dark');
-    }
+const { t, locale } = useI18n(); // Importe o 't' (translate)
+const { isDark, toggleDarkMode } = useTheme();
+
+const toggleLang = () => {
+    locale.value = locale.value === 'pt' ? 'en' : 'pt';
 };
 </script>

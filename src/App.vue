@@ -13,6 +13,9 @@ import HeroSection from './components/sections/HeroSection.vue';
 
     <main>
         <HeroSection />
+        <HeroSection />
+        <HeroSection />
+        <HeroSection />
         <!-- <AboutSection />
     <ServicesSection />
     <ProjectsSection />
