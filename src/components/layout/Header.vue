@@ -1,34 +1,34 @@
 <template>
-    <header class="fixed w-full z-20 top-0 inset-s-0">
-        <nav class="bg-neutral-primary">
+    <header
+        class="fixed w-full z-20 top-0 start-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-colors duration-300"
+    >
+        <nav class="border-b border-gray-200 dark:border-gray-800">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-7xl p-4">
-                <a
-                    href="https://flowbite.com"
-                    class="flex items-center space-x-3 rtl:space-x-reverse"
-                >
-                    <img
-                        src="https://flowbite.com/docs/images/logo.svg"
-                        class="h-7"
-                        alt="Flowbite Logo"
-                    />
-                    <span class="self-center text-xl text-heading font-semibold whitespace-nowrap"
-                        >Flowbite</span
+                <a href="#" class="flex items-center space-x-3">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-7" alt="Logo" />
+                    <span class="self-center text-xl font-semibold text-gray-900 dark:text-white"
+                        >Matheus.dev</span
                     >
                 </a>
-                <div class="flex items-center space-x-6 rtl:space-x-reverse">
+
+                <div class="flex items-center space-x-6">
                     <a
                         href="tel:5541251234"
-                        class="text-sm text-body hover:text-brand-primary transition-colors"
+                        class="text-sm text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
                     >
                         (555) 412-1234
                     </a>
 
-                    <button @click="toggleLang">{{ locale.toUpperCase() }}</button>
+                    <button
+                        @click="toggleLang"
+                        class="text-sm font-bold text-gray-900 dark:text-white uppercase"
+                    >
+                        {{ locale }}
+                    </button>
 
                     <button
                         @click="toggleDarkMode"
-                        class="p-2 rounded-full text-body hover:bg-gray-100 hover:text-brand-primary transition-all duration-300"
-                        aria-label="Toggle theme"
+                        class="p-2 rounded-full text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-800 transition-all"
                     >
                         <svg
                             v-if="isDark"
@@ -62,47 +62,53 @@
                 </div>
             </div>
         </nav>
-        <nav class="bg-neutral-secondary-soft border-y border-default border-default">
+
+        <nav>
             <div class="max-w-7xl px-4 py-3 mx-auto">
-                <div class="flex items-center">
-                    <ul
-                        class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm"
-                    >
-                        <li>
-                            <a href="#" class="text-heading hover:underline" aria-current="page">{{
-                                t('nav.home')
-                            }}</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-heading hover:underline">{{
-                                t('nav.company')
-                            }}</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-heading hover:underline">{{ t('nav.team') }}</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-heading hover:underline">{{
-                                t('nav.features')
-                            }}</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul
+                    class="flex flex-row font-medium space-x-8 text-sm text-gray-700 dark:text-gray-200"
+                >
+                    <li>
+                        <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">{{
+                            t('nav.home')
+                        }}</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">{{
+                            t('nav.company')
+                        }}</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">{{
+                            t('nav.team')
+                        }}</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">{{
+                            t('nav.features')
+                        }}</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 
 import { useI18n } from 'vue-i18n';
 import { useTheme } from '../../composables/useTheme';
 
 const { t, locale } = useI18n(); // Importe o 't' (translate)
-const { isDark, toggleDarkMode } = useTheme();
 
 const toggleLang = () => {
     locale.value = locale.value === 'pt' ? 'en' : 'pt';
 };
+
+const { isDark, toggleDarkMode } = useTheme();
+
+// onMounted({
+//     conosle.
+// })
 </script>
