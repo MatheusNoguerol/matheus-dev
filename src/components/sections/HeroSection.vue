@@ -42,14 +42,14 @@
                             performático.
                         </p>
 
-                        <div class="flex flex-wrap gap-4 pt-2">
+                        <div class="flex flex-col md:flex-row gap-4 pt-2">
                             <button
-                                class="px-8 py-4 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 shadow-xl shadow-blue-600/20 transition-all active:scale-95"
+                                class="w-full md:w-auto px-8 py-4 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 shadow-xl shadow-blue-600/20 cursor-pointer"
                             >
                                 Entrar em contato
                             </button>
                             <button
-                                class="px-8 py-4 rounded-xl border border-gray-200 dark:border-gray-700 font-semibold text-gray-700 dark:text-gray-200 hover:border-blue-500 transition-all active:scale-95"
+                                class="w-full md:w-auto px-8 py-4 rounded-xl border border-gray-200 dark:border-gray-700 font-semibold text-gray-700 dark:text-gray-200 hover:border-blue-500 cursor-pointer"
                             >
                                 Ver projetos
                             </button>
