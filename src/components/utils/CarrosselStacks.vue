@@ -32,7 +32,7 @@
                         <img
                             :src="img.url"
                             :alt="img.alt"
-                            class="h-16 w-auto object-contain opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500"
+                            class="h-16 w-auto object-contain opacity-60 grayscale hover:opacity-100 hover:grayscale-0"
                         />
                     </div>
                 </div>
