@@ -5,10 +5,22 @@ export const i18n = createI18n({
     locale: 'pt',
     messages: {
         pt: {
-            nav: { home: 'Início', company: 'Empresa', team: 'Time', features: 'Funcionalidades' },
+            nav: {
+                first: 'NoG Desenvolvimento',
+                home: 'Início',
+                company: 'Empresa',
+                team: 'Time',
+                features: 'Funcionalidades',
+            },
         },
         en: {
-            nav: { home: 'Home', company: 'Company', team: 'Team', features: 'Features' },
+            nav: {
+                first: 'NoG Development',
+                home: 'Home',
+                company: 'Company',
+                team: 'Team',
+                features: 'Features',
+            },
         },
     },
 });
