@@ -1,4 +1,3 @@
-// src/composables/useTheme.js
 import { ref } from 'vue';
 
 const isDark = ref(false);
@@ -6,9 +5,6 @@ const isDark = ref(false);
 export function useTheme() {
     const toggleDarkMode = () => {
         isDark.value = !isDark.value;
-
-        console.log('isDark:', isDark.value);
-        console.log('html:', document.documentElement.className);
 
         applyTheme();
     };
