@@ -155,17 +155,17 @@
                     </li>
                     <li>
                         <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">{{
-                            t('nav.company')
+                            t('nav.about')
                         }}</a>
                     </li>
                     <li>
                         <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">{{
-                            t('nav.team')
+                            t('nav.projects')
                         }}</a>
                     </li>
                     <li>
                         <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">{{
-                            t('nav.features')
+                            t('nav.contact')
                         }}</a>
                     </li>
                 </ul>

@@ -9,10 +9,10 @@
                         <h1
                             class="text-5xl md:text-7xl font-extrabold text-gray-900 dark:text-white tracking-tight leading-[1.1] pt-12"
                         >
-                            Desenvolvedor <br />
+                            {{ t('hero.title') }} <br />
                             <span
                                 class="text-transparent bg-clip-text bg-linear-to-tl from-blue-600 to-indigo-400"
-                                >Full Stack</span
+                                >{{ t('hero.subtitle') }}</span
                             >
                         </h1>
 
@@ -37,21 +37,19 @@
                         <p
                             class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed"
                         >
-                            Especializado em criar arquiteturas robustas com Vue.js, Laravel e React
-                            Native. Transformo requisitos complexos em código elegante e
-                            performático.
+                            {{ t('hero.description') }}
                         </p>
 
                         <div class="flex flex-col md:flex-row gap-4 pt-2">
                             <button
                                 class="w-full md:w-auto px-8 py-4 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 shadow-xl shadow-blue-600/20 cursor-pointer"
                             >
-                                Entrar em contato
+                                {{ t('hero.btnContact') }}
                             </button>
                             <button
                                 class="w-full md:w-auto px-8 py-4 rounded-xl border border-gray-200 dark:border-gray-700 font-semibold text-gray-700 dark:text-gray-200 hover:border-blue-500 cursor-pointer"
                             >
-                                Ver projetos
+                                {{ t('hero.btnProjects') }}
                             </button>
                         </div>
                     </div>
@@ -86,6 +84,9 @@
 <script setup>
 import { ref } from 'vue';
 
-import ProfileImage from '../../assets/images/profile/ownerPicture.png'; // Ou apenas coloque o HTML da div da foto aqui
+import { useI18n } from 'vue-i18n';
+const { t, locale } = useI18n();
+
+import ProfileImage from '../../assets/images/profile/ownerPicture.png';
 import CarrosselStacks from '../utils/CarrosselStacks.vue';
 </script>

@@ -4,7 +4,7 @@
             <h3
                 class="text-sm font-bold uppercase tracking-[0.2em] text-gray-400 dark:text-gray-500"
             >
-                Tecnologias e Ferramentas
+                {{ t('stacks.title') }}
             </h3>
             <div
                 class="mt-2 h-px w-16 bg-linear-to-r from-transparent via-blue-500 to-transparent mx-auto"
@@ -43,6 +43,8 @@
 
 <script setup>
 import { onBeforeUnmount, onMounted, ref, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+const { t, locale } = useI18n();
 
 import docker from '../../assets/images/stacks/docker.png';
 import git from '../../assets/images/stacks/git.png';
@@ -89,7 +91,7 @@ const images = [
 const infiniteImages = computed(() => [...images, ...images, ...images]);
 
 let totalWidth = 0;
-let speed = 0.9; // suavidade do movimento
+let speed = 0.6; // suavidade do movimento
 
 function loop() {
     translateX.value -= speed;
