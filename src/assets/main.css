@@ -1,2 +1,13 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
+html, body {
+  overflow-x: hidden; /* Corta qualquer coisa que tente sair para fora */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full;
+}
