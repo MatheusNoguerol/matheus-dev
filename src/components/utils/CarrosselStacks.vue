@@ -59,6 +59,7 @@ import react from '../../assets/images/stacks/react.png';
 import redis from '../../assets/images/stacks/redis.png';
 import tailwind from '../../assets/images/stacks/tailwind.png';
 import vue from '../../assets/images/stacks/vue.png';
+import n8n from '../../assets/images/stacks/n8n.png';
 
 const container = ref(null);
 const track = ref(null);
@@ -82,12 +83,13 @@ const images = [
     { url: redis, alt: 'redis' },
     { url: tailwind, alt: 'tailwind' },
     { url: vue, alt: 'vue' },
+    { url: n8n, alt: 'n8n' },
 ];
 
 const infiniteImages = computed(() => [...images, ...images, ...images]);
 
 let totalWidth = 0;
-let speed = 0.3; // suavidade do movimento
+let speed = 0.9; // suavidade do movimento
 
 function loop() {
     translateX.value -= speed;
