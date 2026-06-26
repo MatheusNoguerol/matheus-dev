@@ -66,7 +66,7 @@
                     </ul>
                     <div class="flex justify-center">
                         <img
-                            src="../../assets/images/integracoes/conjuntoAut2.png"
+                            src="../../assets/images/integracoes/conjuntoAutomacoes.png"
                             class="object-contain grayscale hover:grayscale-0"
                         />
                     </div>

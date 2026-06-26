@@ -4,6 +4,8 @@
 
         <main :style="containerStyle">
             <HeroSection />
+
+            <About />
         </main>
     </div>
 </template>
@@ -12,6 +14,7 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 import Header from './components/layout/Header.vue';
 import HeroSection from './components/sections/HeroSection.vue';
+import About from './components/sections/About.vue';
 
 const heightPadding = ref(96);
 
