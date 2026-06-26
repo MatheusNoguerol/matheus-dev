@@ -6,6 +6,8 @@
             <HeroSection />
 
             <About />
+
+            <Projects />
         </main>
     </div>
 </template>
@@ -15,6 +17,7 @@ import { ref, computed, onMounted, onUnmounted } from 'vue';
 import Header from './components/layout/Header.vue';
 import HeroSection from './components/sections/HeroSection.vue';
 import About from './components/sections/About.vue';
+import Projects from './components/sections/Projects.vue';
 
 const heightPadding = ref(96);
 
