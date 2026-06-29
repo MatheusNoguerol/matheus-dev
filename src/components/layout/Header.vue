@@ -149,24 +149,24 @@
                     class="flex flex-row font-medium space-x-8 text-sm text-gray-700 dark:text-gray-200"
                 >
                     <li>
-                        <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">{{
-                            t('nav.home')
-                        }}</a>
+                        <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">
+                            {{ t('nav.home') }}
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">{{
-                            t('nav.about')
-                        }}</a>
+                        <a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400">
+                            {{ t('nav.about') }}
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">{{
-                            t('nav.projects')
-                        }}</a>
+                        <a href="#projects" class="hover:text-blue-600 dark:hover:text-blue-400">
+                            {{ t('nav.projects') }}
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">{{
-                            t('nav.contact')
-                        }}</a>
+                        <a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400">
+                            {{ t('nav.contact') }}
+                        </a>
                     </li>
                 </ul>
             </div>

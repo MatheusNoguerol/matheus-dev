@@ -47,11 +47,12 @@
                             >
                                 {{ t('hero.btnContact') }}
                             </button>
-                            <button
-                                class="w-full md:w-auto px-8 py-4 rounded-xl border border-gray-200 dark:border-gray-700 font-semibold text-gray-700 dark:text-gray-200 hover:border-blue-500 cursor-pointer"
+                            <a
+                                href="#projects"
+                                class="w-full md:w-auto px-8 py-4 rounded-xl border border-gray-200 dark:border-gray-700 font-semibold text-gray-700 dark:text-gray-200 hover:border-blue-500 cursor-pointer inline-flex items-center justify-center text-center"
                             >
                                 {{ t('hero.btnProjects') }}
-                            </button>
+                            </a>
                         </div>
                     </div>
 

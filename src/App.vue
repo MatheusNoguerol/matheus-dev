@@ -3,13 +3,13 @@
         <Header />
 
         <main>
-            <HeroSection />
+            <HeroSection id="home" />
 
-            <About />
+            <About id="about" class="scroll-mt-28" />
 
-            <Projects />
+            <Projects id="projects" class="scroll-mt-28" />
 
-            <Contact />
+            <Contact id="contact" class="scroll-mt-28" />
         </main>
     </div>
 </template>
