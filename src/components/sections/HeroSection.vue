@@ -42,6 +42,7 @@
 
                         <div class="flex flex-col md:flex-row gap-4 pt-2">
                             <button
+                                @click="openWhatsApp"
                                 class="w-full md:w-auto px-8 py-4 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 shadow-xl shadow-blue-600/20 cursor-pointer"
                             >
                                 {{ t('hero.btnContact') }}
@@ -89,4 +90,10 @@ const { t, locale } = useI18n();
 
 import ProfileImage from '../../assets/images/profile/ownerPicture.png';
 import CarrosselStacks from '../utils/CarrosselStacks.vue';
+
+const openWhatsApp = () => {
+    const url =
+        'https://api.whatsapp.com/send/?phone=5521965230293&text=Olá! Vi seu portfólio e gostaria de conversar.';
+    window.open(url, '_blank');
+};
 </script>
