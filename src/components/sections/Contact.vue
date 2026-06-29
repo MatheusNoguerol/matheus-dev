@@ -20,7 +20,7 @@
                         class="flex flex-col sm:flex-row gap-6 text-center sm:text-left text-sm font-medium text-gray-600 dark:text-gray-400"
                     >
                         <a
-                            href="mailto:contato@nog.dev.br"
+                            href="mailto:matheusnoguerol15@gmail.com"
                             class="flex items-center justify-center sm:justify-start gap-2.5 hover:text-blue-600 dark:hover:text-blue-400"
                         >
                             <span
@@ -40,7 +40,7 @@
                                     />
                                 </svg>
                             </span>
-                            contato@nog.dev.br
+                            matheusnoguerol15@gmail.com
                         </a>
                         <a
                             href="https://api.whatsapp.com/send/?phone=5521965230293"
