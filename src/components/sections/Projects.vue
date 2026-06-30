@@ -15,7 +15,7 @@
                 <div class="flex justify-center gap-3 mt-8">
                     <button
                         @click="scroll('left')"
-                        class="w-12 h-12 rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-md hover:bg-blue-600 hover:text-white"
+                        class="cursor-pointer w-12 h-12 rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-md hover:bg-blue-600 hover:text-white"
                     >
                         <svg
                             class="w-5 h-5 mx-auto"
@@ -34,7 +34,7 @@
 
                     <button
                         @click="scroll('right')"
-                        class="w-12 h-12 rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-md hover:bg-blue-600 hover:text-white"
+                        class="cursor-pointer w-12 h-12 rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-md hover:bg-blue-600 hover:text-white"
                     >
                         <svg
                             class="w-5 h-5 mx-auto"
@@ -151,7 +151,7 @@ const projects = computed(() => [
         title: t('projects.items.zoperandi.title'),
         subtitle: t('projects.items.zoperandi.subtitle'),
         description: t('projects.items.zoperandi.text'),
-        image: '../../src/assets/images/projects/zoperandi.png',
+        image: '/images/projects/zoperandi.png',
         titleLink: t('projects.items.zoperandi.title_link'),
         link: 'https://zoperandi.space/',
         techs: ['Laravel', 'Vue.js', 'Tailwind CSS', 'MySQL'],
@@ -161,7 +161,7 @@ const projects = computed(() => [
         title: t('projects.items.educa_terra.title'),
         subtitle: t('projects.items.educa_terra.subtitle'),
         description: t('projects.items.educa_terra.text'),
-        image: '../../src/assets/images/projects/educaTerraCortesia.png',
+        image: '/images/projects/educaTerraCortesia.png',
         titleLink: t('projects.items.educa_terra.title_link'),
         link: 'https://github.com/MatheusNoguerol/landing-page-pac-cortesia',
         techs: ['Laravel', 'Vue.js', 'MySQL'],
@@ -171,7 +171,7 @@ const projects = computed(() => [
         title: t('projects.items.portfolio_v2.title'),
         subtitle: t('projects.items.portfolio_v2.subtitle'),
         description: t('projects.items.portfolio_v2.text'),
-        image: '../../src/assets/images/projects/portfolioV2.png',
+        image: '/images/projects/portfolioV2.png',
         titleLink: t('projects.items.portfolio_v2.title_link'),
         link: 'https://github.com/MatheusNoguerol/matheus-dev',
         techs: ['Vue.js 3', 'Tailwind CSS', 'Vite', 'i18n'],
@@ -181,7 +181,7 @@ const projects = computed(() => [
         title: t('projects.items.isr.title'),
         subtitle: t('projects.items.isr.subtitle'),
         description: t('projects.items.isr.text'),
-        image: '../../src/assets/images/projects/isr.png',
+        image: '/images/projects/isr.png',
         titleLink: t('projects.items.isr.title_link'),
         link: 'https://isrhigienizacoes.com.br/#inicio',
         techs: ['Laravel', 'Vue.js', 'BootstrapVue', 'MySQL'],
@@ -191,7 +191,7 @@ const projects = computed(() => [
         title: t('projects.items.totalon.title'),
         subtitle: t('projects.items.totalon.subtitle'),
         description: t('projects.items.totalon.text'),
-        image: '../../src/assets/images/projects/totalon.png',
+        image: '/images/projects/totalon.png',
         titleLink: t('projects.items.totalon.title_link'),
         link: 'https://totalcontrol.com.br/',
         techs: ['Laravel', 'Vue.js', 'MySQL', 'ERP'],
@@ -201,7 +201,7 @@ const projects = computed(() => [
         title: t('projects.items.pac_app.title'),
         subtitle: t('projects.items.pac_app.subtitle'),
         description: t('projects.items.pac_app.text'),
-        image: '../../src/assets/images/projects/pacApp.png',
+        image: '/images/projects/pacApp.png',
         titleLink: t('projects.items.pac_app.title_link'),
         link: 'https://api.whatsapp.com/send/?phone=5521965230293&text&type=phone_number&app_absent=0',
         techs: ['React Native', 'Expo', 'Laravel API', 'MySQL'],
@@ -211,7 +211,7 @@ const projects = computed(() => [
         title: t('projects.items.controle_fin.title'),
         subtitle: t('projects.items.controle_fin.subtitle'),
         description: t('projects.items.controle_fin.text'),
-        image: '../../src/assets/images/projects/controleFinanceiro.png',
+        image: '/images/projects/controleFinanceiro.png',
         titleLink: t('projects.items.controle_fin.title_link'),
         link: 'https://api.whatsapp.com/send/?phone=5521965230293&text&type=phone_number&app_absent=0',
         techs: ['React Native', 'Expo', 'Laravel API', 'Charts'],
@@ -221,7 +221,7 @@ const projects = computed(() => [
         title: t('projects.items.apis.title'),
         subtitle: t('projects.items.apis.subtitle'),
         description: t('projects.items.apis.text'),
-        image: '../../src/assets/images/projects/api.png',
+        image: '/images/projects/api.png',
         titleLink: t('projects.items.apis.title_link'),
         link: 'https://api.whatsapp.com/send/?phone=5521965230293&text&type=phone_number&app_absent=0',
         techs: ['Laravel', 'REST API', 'JWT', 'MySQL'],
@@ -231,7 +231,7 @@ const projects = computed(() => [
         title: t('projects.items.portfolio_v1.title'),
         subtitle: t('projects.items.portfolio_v1.subtitle'),
         description: t('projects.items.portfolio_v1.text'),
-        image: '../../src/assets/images/projects/portfolioV1.png',
+        image: '/images/projects/portfolioV1.png',
         titleLink: t('projects.items.portfolio_v1.title_link'),
         link: 'https://github.com/MatheusNoguerol/landing-page',
         techs: ['Vue.js 2', 'Bootstrap', 'Vite', 'i18n'],
@@ -241,7 +241,7 @@ const projects = computed(() => [
         title: t('projects.items.crm_ab.title'),
         subtitle: t('projects.items.crm_ab.subtitle'),
         description: t('projects.items.crm_ab.text'),
-        image: '../../src/assets/images/projects/crmAB.png',
+        image: '/images/projects/crmAB.png',
         titleLink: t('projects.items.crm_ab.title_link'),
         link: 'https://ab.nog.dev.br/',
         techs: ['Vue.js', 'Laravel', 'Tailwind css', 'Charts', 'MySQL'],

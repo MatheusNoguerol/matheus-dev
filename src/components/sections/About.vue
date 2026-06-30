@@ -41,7 +41,7 @@
                     </p>
                     <div class="flex justify-center">
                         <img
-                            src="../../assets/images/integracoes/bancos/conjunto.png"
+                            src="/images/integracoes/bancos/conjunto.png"
                             class="object-contain grayscale hover:grayscale-0"
                         />
                     </div>
@@ -66,7 +66,7 @@
                     </ul>
                     <div class="flex justify-center">
                         <img
-                            src="../../assets/images/integracoes/conjuntoAutomacoes.png"
+                            src="/images/integracoes/conjuntoAutomacoes.png"
                             class="object-contain grayscale hover:grayscale-0"
                         />
                     </div>
@@ -163,12 +163,12 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 
 const marketplaces = ref([
-    { name: 'iFood', src: '/src/assets/images/integracoes/marketplaces/ifood.jpg' },
-    { name: 'Shopee', src: '/src/assets/images/integracoes/marketplaces/shopee.png' },
-    { name: 'Mercado Livre', src: '/src/assets/images/integracoes/marketplaces/mercadolivre.png' },
-    { name: 'Nuvemshop', src: '/src/assets/images/integracoes/marketplaces/nuvemshop.png' },
-    { name: 'Shopify', src: '/src/assets/images/integracoes/marketplaces/shopify.png' },
-    { name: 'JotaJá', src: '/src/assets/images/integracoes/marketplaces/jotaja.png' },
+    { name: 'iFood', src: '/images/integracoes/marketplaces/ifood.jpg' },
+    { name: 'Shopee', src: '/images/integracoes/marketplaces/shopee.png' },
+    { name: 'Mercado Livre', src: '/images/integracoes/marketplaces/mercadolivre.png' },
+    { name: 'Nuvemshop', src: '/images/integracoes/marketplaces/nuvemshop.png' },
+    { name: 'Shopify', src: '/images/integracoes/marketplaces/shopify.png' },
+    { name: 'JotaJá', src: '/images/integracoes/marketplaces/jotaja.png' },
 ]);
 
 // Referência para o container de scroll

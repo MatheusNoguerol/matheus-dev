@@ -43,7 +43,7 @@
                             matheusnoguerol15@gmail.com
                         </a>
                         <a
-                            href="https://api.whatsapp.com/send/?phone=5521965230293"
+                            href="https://api.whatsapp.com/send/?phone=5521965230293&text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto."
                             target="_blank"
                             class="flex items-center justify-center sm:justify-start gap-2.5 hover:text-blue-600 dark:hover:text-blue-400"
                         >

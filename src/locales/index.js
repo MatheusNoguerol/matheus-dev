@@ -6,7 +6,7 @@ export const i18n = createI18n({
     messages: {
         pt: {
             nav: {
-                first: 'NoG Desenvolvimento',
+                first: 'Matheus Noguerol',
                 home: 'Início',
                 about: 'Sobre',
                 projects: 'Projetos',
@@ -137,7 +137,7 @@ export const i18n = createI18n({
         },
         en: {
             nav: {
-                first: 'NoG Development',
+                first: 'Matheus Noguerol',
                 home: 'Home',
                 about: 'About',
                 projects: 'Projects',

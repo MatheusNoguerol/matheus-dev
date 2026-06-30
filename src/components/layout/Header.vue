@@ -6,11 +6,7 @@
             <div class="max-w-7xl mx-auto p-4 w-full">
                 <div class="flex justify-between items-center w-full">
                     <a href="#" class="flex items-center space-x-3">
-                        <img
-                            src="../../../src/assets/images/logo/logo.png"
-                            class="h-8"
-                            alt="Logo"
-                        />
+                        <img src="/images/logo/logo.png" class="h-8" alt="Logo" />
                         <span
                             class="self-center text-xl font-semibold text-gray-900 dark:text-white"
                             >{{ t('nav.first') }}</span
@@ -19,7 +15,7 @@
 
                     <div class="hidden md:flex items-center space-x-6">
                         <a
-                            href="tel:5541251234"
+                            href="https://api.whatsapp.com/send/?phone=5521965230293&text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto."
                             class="text-sm text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
                         >
                             +55 (21) 9 6523-0293

@@ -89,7 +89,7 @@ import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
 
-import ProfileImage from '../../assets/images/profile/ownerPicture.png';
+import ProfileImage from '../../../public/images/profile/ownerPicture.png';
 import CarrosselStacks from '../utils/CarrosselStacks.vue';
 
 const openWhatsApp = () => {
